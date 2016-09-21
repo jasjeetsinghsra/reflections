@@ -1,0 +1,66 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	With the diff command the process was made much easier than the manual
+	process as only the few lines whichhad some difference were displayed 
+	rather than the thosuands line of code.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Easy access to history of a file will let us know what we have done 
+    previously and with the FC and DIFF command we can compare two files
+    to see the changes made by us., we can know mhow much change we made 
+    and reflect on it whether the changes were efficient, if not we can 
+    restore the previous version.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Manual commits can be useful and the same time harmful. Although, the 
+    concept can be aced with some experience. Beginners can hav some tough
+    time thinking when to commit. Beginners should keep the manual commit 
+    by following the simple rule, one commit per logical change.
+
+    On the other hand , automatic version controls can create to many 
+    versions but ate same time be of little help to the beginners.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git basically deals with coding files which are related to each other. A
+    single function can be used in multiple files so when making a change, the 
+    change the change should be made in allt he files related to that function,
+    not only the single file for proper functioning.
+
+    on the other hand, documents are generally independent of each other, and 
+    google docs generally deal with documents rather than codes.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log: can be used simly or with --stats option for some detailed info.
+    git diff helps us find the fdifference between two files.
+    + (green) sign represnets the dat added in the latest commit, - sign(red)
+    represents the data which was present in previous commit but is not 
+    present in the new commit. No sign means that dat has not changet at all.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+   I learned a few commands such as git log , which shows all the commit, 
+   git checkout {commit id], which crestores the version give as commit id.
+   we can run and check if there isa ny bug in that version.
+   then i learned git reflog command which is used to restore back to the
+   most actually recent commit as the git checkout command will change the
+   commit history. So to find the other commit versions we need git reflog 
+   and hen can use the command git checkout again with the commit id we get 
+   from reflog to restore the most actual commit version
+   also git diff idodl id new help me easily find the bug. Its much easier
+   to find a bug thi way rather thanmanually finding bugs for larger projects.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I would like to use git for my project at university of waterloo. I am 
+    tinking of bulding an anroid app and I will develop tat with my team using
+    git,s version vcontrol.
