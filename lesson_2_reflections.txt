@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	When you intialize a repositary using git init command, it creates 
+	ahidden .git folder in that directory. Now we can use all the
+	features of git withinin that  directory, and have version control 
+	on our files within that directory and the sub directories within it.
