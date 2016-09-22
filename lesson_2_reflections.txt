@@ -4,3 +4,61 @@ What happens when you initialize a repository? Why do you need to do it?
 	ahidden .git folder in that directory. Now we can use all the
 	features of git withinin that  directory, and have version control 
 	on our files within that directory and the sub directories within it.
+
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
+
+	Staging area is the intermediate between wd and repository.
+	i.e the file is in the phase of being commited.
+	we can remove any file from staging area by using git reset, as
+	opposed to git add used for adding files to the area.
+
+How can you use the staging area to make sure you have one commit per 
+logical change?
+
+	Initially using the git diff comand compare the changes in wd and
+	staging area. If any files have changes and you want tht changes to 
+	commit, then choose one file and add it it staging area using 
+	git add filename. Then with git diff --staged command make sure that 
+	you want to commit those changes. then run the git commit command 
+	to make one logical change per commit.
+	
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+	
+	For experimenting your project with some new feature, for making
+	your project in some new language. Branches will help in keeping
+	the experimental work isolated i.e any changes made to it will not 
+	mess up with the orignal project(master branch).
+
+How do the diagrams help you visualize the branch structure?
+	
+	diagrams visually shows us the branches, does we can visually 
+	differentiate between the master branch and other branches.
+	Plus putting arrows towars the parent whenever a commit is created
+	help us find what commmits are reachable and which are not. It clears
+	the concept of reachability.
+	
+What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+
+	The result of merging two braches together is that all the changes are
+	present now on the master line and we can acces those changes while being 
+	on the master line.
+	the diagram represntationmakes it easy for us to understand the concept
+	behing branches , reachability and merging and it expalins how the whole
+	merging process works.
+	
+What are the pros and cons of Git’s automatic merging vs. always doing merges 
+manually?
+
+	Automatic merging helps the merge process easier when there are many
+	branches and commits. but at the sae time if the same code say B is
+	modified by two person say rock modifies it to B' and johny to B''
+	then a merge conflict arises which we have to solve by opening the file 
+	which is then divided into three parts the changes made by me, the common,
+	and the master. So we resolve the conflict in file and then add file to 
+	staging area and commit thst change.
+	
+	MAnuallly merging can be eay for shorter projects but is not that fast for 
+	larger projects.
